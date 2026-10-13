@@ -11,10 +11,28 @@
 
 def lire():
     # récupération des arguments et sélection du flux
-    # parcours du flux
-    # comptage
+    c=input()
+    try: 
+        flux= open(c,r)
+        chaine=flux.read()
+    except: 
+        chaine=c
+    
+
+    # comptage    
+    
+    A=0
+    B=0
+    C=0
+    for k in chaine:
+        if k==" ":
+            B+=1
+        elif k=="\n" or k=="\t":
+            C+=1
+        else:A+=1
+
     # affichage 
-    return ""
+    print("nombre de caractères = " + str(A) + "\nnombre de mots = " + str(B) + "\nnombre de lignes = " + str(C))
 
 
     
