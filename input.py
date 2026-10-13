@@ -4,7 +4,9 @@
 
 def saisie():
     """Lecture depuis l'entrée standard"""
-    return ""
+    print("input pseudo")
+    print("Bonjour " + input())
 
 if __name__ == "__main__":
     saisie()
+
